@@ -1,0 +1,2 @@
+# Online-Movie-Subscription-with-Django
+This project presents an overview of online movie subscription which is a software solution. Easy and convenient interface, where admin can view, update, add and delete attributes like actor, director, movie, casting, customer and book the movie to the customer. The necessary requirements are being available and visible in this project. The project is done using the Django and is made easy to view the availibility.
