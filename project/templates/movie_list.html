@@ -1,0 +1,14 @@
+{% block content %}
+  <h1>Director INfo</h1>
+  {% if movie_list %}
+  <table border>
+    {% for movie in movie_list %}
+      <tr>
+       <td> {{ movie.name }}</td><td> {{ movie.type }}</td> <td>{{movie.year}}</td><td>{{movie.lamguage}}</td>
+       </tr>
+    {% endfor %}
+    </table>
+  {% else %}
+    <p>There are no director .</p>
+  {% endif %}
+{% endblock %}

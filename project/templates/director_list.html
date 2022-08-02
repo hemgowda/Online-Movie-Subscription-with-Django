@@ -1,0 +1,14 @@
+{% block content %}
+  <h1>Director INfo</h1>
+  {% if director_list %}
+  <table border>
+    {% for director in director_list %}
+      <tr>
+       <td> {{ director.name }}</td><td> {{ director.address }}</td> <td>{{director.company}}</td><td>{{director.language}}</td>
+       </tr>
+    {% endfor %}
+    </table>
+  {% else %}
+    <p>There are no director .</p>
+  {% endif %}
+{% endblock %}

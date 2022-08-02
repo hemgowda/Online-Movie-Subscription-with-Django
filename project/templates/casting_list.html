@@ -1,0 +1,14 @@
+{% block content %}
+  <h1>casting INfo</h1>
+  {% if casting_list %}
+  <table border>
+    {% for casting in casting_list %}
+      <tr>
+       <td> {{ casting.date}}</td><td> {{ casting.time }}</td> <td>{{casting.role}}</td><td>{{casting.actor}}</td>
+       </tr>
+    {% endfor %}
+    </table>
+  {% else %}
+    <p>There are no casting .</p>
+  {% endif %}
+{% endblock %}

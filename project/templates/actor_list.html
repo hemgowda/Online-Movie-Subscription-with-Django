@@ -1,0 +1,14 @@
+{% block content %}
+  <h1>Director INfo</h1>
+  {% if actor_list %}
+  <table border>
+    {% for actor in actor_list %}
+      <tr>
+       <td> {{ actor.name }}</td><td> {{ actor.gender }}</td> <td>{{actor.language}}</td><td>{{actor.rating}}</td>
+       </tr>
+    {% endfor %}
+    </table>
+  {% else %}
+    <p>There are no Actors .</p>
+  {% endif %}
+{% endblock %}
